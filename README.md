@@ -76,8 +76,10 @@ WebMock.disable_net_connect!(:net_http_connect_on_start => true, :allow_localhos
 
 The following modes are supported:
 
-* attach_to_launch (do not create a new launch but add executing features/scenarios to an existing launch. Use launch_id or file_with_launch_id settings to configure that. If they are not present client will check rp_launch_id.tmp in `Dir.tmpdir`)
-* group_by_folder (represent folders with features as nested suites in Report Portal) # TODO: not supported by new Cucumber formatter currently
+| Name | Purpose |
+| --- | --- |
+| attach_to_launch | Do not create a new launch but add executing features/scenarios to an existing launch. Use launch_id or file_with_launch_id settings to configure that. If they are not present client will check rp_launch_id.tmp in `Dir.tmpdir`)
+| skip_reporting_hierarchy | Do not create items for folders and feature files |
 
 ## Logging
 Experimental support for three common logging frameworks was added:
