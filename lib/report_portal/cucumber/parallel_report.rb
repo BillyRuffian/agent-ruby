@@ -20,6 +20,7 @@ require 'parallel_tests'
 require 'sys/proctable'
 require 'fileutils'
 
+
 require_relative 'report'
 
 module ReportPortal
