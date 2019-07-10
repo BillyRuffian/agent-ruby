@@ -6,7 +6,7 @@ module ReportPortal
     class ParallelFormatter < Formatter
       # @api private
       def initialize(config)
-        @start_launch_time = ReportPortal.now
+        @start_launch_time = ReportPortal.now - 1
         super(config)
       end
 
